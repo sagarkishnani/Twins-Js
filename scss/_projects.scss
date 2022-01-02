@@ -1,0 +1,50 @@
+#project {
+  background-color: $secondColor;
+}
+
+/*Us*/
+.project-intro {
+  background-image: url("../images/black.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+}
+
+.project-title {
+  font-weight: bold;
+  padding-top: 150px;
+  padding-left: 150px;
+  color: white;
+  font-size: 80px;
+}
+
+.gallery-lightbox {
+  filter: grayscale(90%);
+  -webkit-filter: grayscale(90%);
+  transition-duration: 1s;
+}
+
+.gallery-lightbox:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+  transition-duration: 1s;
+}
+
+/* MOBILE */
+
+@media (max-width: 576px) {
+  .main-title {
+    font-size: 60px;
+  }
+  .project-title {
+    font-size: 50px;
+    text-align: center;
+    padding-left: 0px;
+  }
+  .project-intro {
+    background-image: url("../images/black-pyramid.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+  }
+}

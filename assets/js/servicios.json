@@ -1,0 +1,42 @@
+[
+    {
+        "id":1,
+        "name" : "Branding",
+        "icono1": "far",
+        "icono2": "fa-sticky-note",
+        "precio" : 300,
+        "descripcion": "En TwinStudios ayudamos a nuestros clientes a crear y hacer que su emprendimiento se destaque delante de las demás marcas con una asesoría personalizada que busca empatizar con el público objetivo."
+    },
+    {
+        "id":2,
+        "name" : "Diseño Web",
+        "icono1": "fas",
+        "icono2": "fa-pager",
+        "precio" : 800,
+        "descripcion": "En TwinStudios desarrollamos la página web de tus sueños. Creamos páginas web artesanales, hechas a medida, logrando que los usuarios tengan una experiencia totalmente distinta y personalizada."
+    },
+    {
+        "id":3,
+        "name" : "Aplicaciones Móviles",
+        "icono1": "fas",
+        "icono2": "fa-mobile-alt",
+        "precio" : 1300,
+        "descripcion": "Desarrollamos Aplicaciones Móviles para Android y iOS a medida. Tenemos un equipo que se encarga de desarrollar aplicaciones personalizadas que estén acorde a las necesidades del cliente."
+    },
+    {
+        "id":4,
+        "name" : "Social Media",
+        "precio" : 400,
+        "icono1": "fas",
+        "icono2": "fa-comments",
+        "descripcion": "En TwinStudios nos encargamos de tus redes en busca que nuestros clientes logren cumplir sus objetivos en ventas. Nos enfocamos al 100% a brindar servicios que ayuden a las empresas a interactuar con clientes desde las redes sociales."
+    },
+    {
+        "id":5,
+        "name" : "Diseño de Logos",
+        "precio" : 200,
+        "icono1": "fas",
+        "icono2": "fa-magic",
+        "descripcion": "En TwinStudios nos encargamos de diseñar el logo que te acompañará en el resto de tu emprendimiento. Creamos diseños fuera de lo común, siempre priorizando los valores de marca y el concepto."
+    }
+  ]

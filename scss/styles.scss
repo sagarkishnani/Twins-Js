@@ -1,0 +1,372 @@
+@import "_colors";
+@import "_fonts";
+@import "_index";
+@import "_nosotros";
+@import "_contact";
+@import "_projects";
+@import "_animations";
+@import "_404";
+@import "_services";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: $bodyFont;
+  color: black;
+  overflow-x: hidden;
+  background-color: black !important;
+}
+
+/* Estilos de contenido */
+.padded-top {
+  padding-top: 20px;
+}
+
+.padded-top-2 {
+  padding-top: 40px;
+}
+.padded-bottom {
+  padding-bottom: 0px;
+}
+.padded-bottom-little {
+  padding-bottom: 35px;
+}
+.padded {
+  padding: 200px;
+}
+.padded-left {
+  padding-left: 40px !important;
+}
+.active-link {
+  color: $mainColor;
+  font-style: italic;
+}
+
+/* Navbar */
+#nav-logo {
+  background-color: $secondColor;
+}
+.navbar-style {
+  background-color: $secondColor;
+  padding: 30px;
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+.navbar-border {
+  border-bottom: 1px solid white;
+}
+
+.navbar-logo {
+  font-family: $titleFont;
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+.navbar-logo:hover {
+  color: $mainColor;
+  transition: ease 0.4s;
+}
+.nav-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 255' stroke-linecap='butt' stroke-miterlimit='10' stroke-width='1' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.nav-icon:hover {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(143,96,198, 1)' stroke-linecap='square' stroke-miterlimit='10' stroke-width='1' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  transition: ease 0.4s;
+}
+.nav-link {
+  text-align: center;
+  font-family: $linkFont;
+  font-weight: 300;
+  font-size: 4rem;
+  color: white !important;
+  border-bottom: white solid 1px;
+  border-top: white solid 1px;
+}
+
+.active-link {
+  color: $mainColor !important;
+}
+
+.nav-link:hover {
+  transition: ease 1s;
+  color: $mainColor !important;
+}
+
+#offcanvasNavbar {
+  width: 80%;
+  background-color: $secondColor !important;
+}
+
+/* Navbar responsive */
+@media (max-width: 768px) {
+  #offcanvasNavbar {
+    width: 100%;
+  }
+}
+
+/* Footer */
+#footer {
+  background-color: $secondColor;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer-main-box {
+  padding-bottom: 20px;
+}
+.footer-item {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.footer-item2 {
+  text-decoration: none;
+}
+
+.footer-item:hover {
+  color: $mainColor;
+}
+
+.footer-element ul {
+  padding: 10px;
+}
+.footer-element ul li {
+  color: white;
+  list-style-image: url("/images/icons/flecha-correcta.png");
+  padding: 3px;
+}
+
+.footer-element ul li:hover {
+  transform: translate(5px);
+  transition: 1s;
+}
+
+.fab {
+  color: white;
+  font-size: 28px;
+  padding: 10px;
+}
+
+.fab:hover {
+  color: $mainColor;
+}
+
+.linea {
+  border-top: 4px solid white;
+}
+
+.footer-conditions {
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.footer-conditions:hover {
+  color: $mainColor;
+}
+
+/* Media queries */
+/* MOBILE */
+
+@media (max-width: 576px) {
+  .nav-link {
+    font-size: 2rem;
+  }
+  .hero-section {
+    padding-top: 50px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .mob-padded {
+    padding-bottom: 20px;
+  }
+
+  .image {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .image {
+    img {
+      width: 310px;
+      height: 210px;
+      transform: translate(0px, 0px);
+    }
+  }
+
+  .padding {
+    padding: 10px;
+  }
+
+  .btn-full {
+    width: 80%;
+  }
+  .btn-line {
+    width: 80%;
+  }
+
+  /* Description */
+
+  .text-description {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+  /* Footer */
+  #footer {
+    background-color: $secondColor;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .footer-item {
+    color: $mainColor;
+  }
+
+  .footer-item:hover {
+    text-decoration: underline;
+    transition: 1s;
+  }
+
+  .footer-main-box {
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .footer-element {
+    ul {
+      padding: 10px;
+      text-align: center;
+      li {
+        list-style: none;
+      }
+    }
+  }
+
+  .linea {
+    border-top: 4px solid white;
+  }
+
+  .footer-conditions {
+    padding: 0px;
+  }
+
+  .padded-left {
+    padding-left: 0px !important;
+  }
+
+  .redes {
+    text-align: center;
+  }
+}
+
+/* TABLET */
+@media (min-width: 577px) and (max-width: 769px) {
+  .nav-link {
+    font-size: 2rem;
+  }
+  .hero-section {
+    padding-top: 50px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .image {
+    padding: 20px;
+  }
+
+  .btns {
+    justify-content: center;
+  }
+
+  .image {
+    img {
+      width: 680px;
+      height: 450px;
+      transform: translate(0px, 0px);
+    }
+  }
+  .padding {
+    padding: 10px;
+  }
+
+  .btn-full {
+    width: 90%;
+  }
+  .btn-line {
+    width: 90%;
+  }
+
+  /* Description */
+
+  .text-description {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+  /* Footer */
+  #footer {
+    background-color: $secondColor;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .footer-main-box {
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .footer-item {
+    color: $mainColor;
+  }
+
+  .footer-item:hover {
+    text-decoration: underline;
+    transition: 1s;
+  }
+
+  .footer-element {
+    ul {
+      padding: 10px;
+      text-align: center;
+
+      li {
+        list-style-image: none;
+      }
+    }
+  }
+
+  .linea {
+    border-top: 4px solid white;
+  }
+
+  .footer-conditions {
+    padding: 0px;
+    text-align: center;
+  }
+
+  .padded-left {
+    padding-left: 0px !important;
+  }
+
+  .redes {
+    text-align: center;
+  }
+}

@@ -1,0 +1,220 @@
+/* Hero */
+.hero {
+  background-color: $secondColor;
+}
+
+.hero-section {
+  padding-top: 200px;
+}
+
+#typed {
+  color: $mainColor;
+}
+
+.image {
+  img {
+    width: 1150px;
+    height: 780px;
+    transform: translate(-410px, 120px);
+  }
+}
+
+.subtitle {
+  color: white;
+  font-size: 25px;
+  line-height: 0.9;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.texto {
+  color: $grayOpacity;
+  font-size: 15px;
+  max-width: 400px;
+}
+
+.btn-full {
+  background-color: $mainColor;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  width: 100%;
+  padding: 10px;
+}
+
+.btn-full:hover {
+  background-color: $mainColor;
+}
+.btn-line {
+  background-color: $secondColor;
+  border-radius: 4px;
+  border: solid 1px $mainColor;
+  color: white;
+  width: 100%;
+  padding: 10px;
+}
+
+.btn-line {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  color: white;
+  border: 1px $mainColor solid;
+  border-radius: 4px;
+  outline: 0;
+  overflow: hidden;
+  background: none;
+  z-index: 1;
+  cursor: pointer;
+  transition: 0.08s ease-in;
+  -o-transition: 0.08s ease-in;
+  -ms-transition: 0.08s ease-in;
+  -moz-transition: 0.08s ease-in;
+  -webkit-transition: 0.08s ease-in;
+}
+
+.fill:hover {
+  color: white;
+}
+
+.fill:before {
+  content: "";
+  position: absolute;
+  background: $mainColor;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  top: 0;
+  z-index: -1;
+  transition: right 0.2s ease-in;
+}
+
+.fill:hover:before {
+  right: 0;
+}
+
+/* Description */
+
+#description {
+  background: linear-gradient(45deg, $mainColor, #41358d, #715df5, #555075);
+  background-size: 600% 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  animation: gradient 16s linear infinite;
+  animation-direction: alternate;
+}
+
+.text-description {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+.text-focus-in {
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 2s
+    both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 2s both;
+}
+
+/* Services */
+#services {
+  background-color: $secondColor;
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+
+.od-tab-menu {
+  border: 1px solid white;
+  border-radius: 999px;
+}
+
+.tabs-width {
+  width: auto !important;
+}
+
+.tab-link {
+  background-color: $secondColor;
+  color: white;
+  border-radius: 999px;
+  border: none;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.active {
+  background-color: white !important;
+  color: $secondColor !important;
+  border-radius: 999px;
+}
+
+.active-tab {
+  background-color: $secondColor !important;
+}
+.row {
+  --bs-gutter-x: none !important;
+}
+.clients-bg {
+  background-color: $secondColor;
+}
+.clients-title {
+  color: white;
+  text-align: center;
+  font-weight: 700;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+  background-color: $secondColor;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide {
+  img {
+    width: 100%;
+  }
+}
+
+.swiper-button-prev:after {
+  color: $mainColor;
+}
+
+.swiper-button-next:after {
+  color: $mainColor;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  opacity: 1;
+  border: $mainColor solid 1px;
+  background-color: transparent;
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: $mainColor;
+}
+
+/* Clients */
+#clients {
+  height: 500px;
+  background-color: $lightGray;
+}
+
+.circle {
+  img {
+    border-radius: 100%;
+  }
+}
